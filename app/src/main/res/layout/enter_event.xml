@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/enter_event_padding"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/dialogEditFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/enter_event_marginTop"
+        android:padding="@dimen/enter_event_editView_padding"
+        android:background="@drawable/edit_text_border"
+        android:hint="From" />
+
+    <EditText
+        android:id="@+id/dialogEditTo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogEditFrom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="@dimen/enter_event_marginTop"
+        android:hint="To"
+        android:padding="@dimen/enter_event_editView_padding" />
+
+    <EditText
+        android:id="@+id/dialogEditDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/dialogEditTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/enter_event_marginTop"
+        android:padding="@dimen/enter_event_editView_padding"
+        android:hint="Date"
+        android:background="@drawable/edit_text_border"
+        android:scrollbarStyle="insideInset" />
+
+    <EditText
+        android:id="@+id/dialogEditVehicle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogEditDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/enter_event_marginTop"
+        android:padding="@dimen/enter_event_editView_padding"
+        android:hint="Vehicle Name"
+        android:background="@drawable/edit_text_border"/>
+
+    <EditText
+        android:id="@+id/dialogEditVehicleNo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogEditVehicle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/enter_event_marginTop"
+        android:padding="@dimen/enter_event_editView_padding"
+        android:hint="Vehicle No."
+        android:background="@drawable/edit_text_border"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/dialogEditSeat"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogEditVehicleNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="@dimen/enter_event_marginTop"
+        android:padding="@dimen/enter_event_editView_padding"
+        android:hint="Seat Available"
+        android:background="@drawable/edit_text_border"
+        android:inputType="number" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

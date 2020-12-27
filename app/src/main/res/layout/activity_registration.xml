@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegistrationActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="?attr/actionModeCloseDrawable"
+            android:theme="@style/AppTheme"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/register_padding">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/reg_TextView_padding"
+            android:text="Full Name"
+            android:textSize="@dimen/reg_textView_size" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName"
+            android:background="@drawable/edit_text_border"
+            android:singleLine="true"
+            android:padding="@dimen/register_editView_padding"
+            android:hint="Enter FullName" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editTextName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/reg_TextView_padding"
+            android:text="Email ID"
+            android:textSize="@dimen/reg_textView_size" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/register_editView_padding"
+            android:hint="Enter email address"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/reg_TextView_padding"
+            android:text="Password"
+            android:textSize="@dimen/reg_textView_size" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:singleLine="true"
+            android:padding="@dimen/register_editView_padding"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textViewConfirmPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/reg_TextView_padding"
+            android:text="Confirm PWD"
+            android:textSize="@dimen/reg_textView_size" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConfirmPass"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:singleLine="true"
+            android:padding="@dimen/register_editView_padding"
+            android:background="@drawable/edit_text_border"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textViewContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editTextConfirmPass"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/reg_TextView_padding"
+            android:text="Contact No."
+            android:textSize="@dimen/reg_textView_size" />
+
+        <EditText
+            android:id="@+id/editTextContactReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContact"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:singleLine="true"
+            android:background="@drawable/edit_text_border"
+            android:padding="@dimen/register_editView_padding"
+            android:inputType="phone"
+            android:hint="Enter Contact Number" />
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editTextContactReg"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/reg_TextView_padding"
+            android:text="Gender"
+            android:textSize="@dimen/reg_textView_size"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/reg_TextView_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGender">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_weight="1"
+                android:text="Male"
+                android:layout_gravity="start"/>
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:checked="false"
+                android:layout_weight="1"
+                android:layout_marginStart="40dp"
+                android:text="Female" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/reg_TextView_padding"
+            android:text="City Name"
+            android:textSize="@dimen/reg_textView_size"/>
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCity"
+            android:padding="@dimen/register_editView_padding"
+            android:background="@drawable/edit_text_border"
+            android:hint="City Name" />
+
+        <TextView
+            android:id="@+id/textViewUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCity"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="User Type"
+            android:padding="@dimen/reg_TextView_padding"
+            android:textSize="@dimen/reg_textView_size" />
+
+        <Spinner
+            android:id="@+id/Usertype_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserType"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/Usertype_spinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:onClick="Register"
+            android:text="Register" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

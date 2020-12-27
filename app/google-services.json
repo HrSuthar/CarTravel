@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "594755669985",
+    "firebase_url": "https://cartravels-9826a.firebaseio.com",
+    "project_id": "cartravels-9826a",
+    "storage_bucket": "cartravels-9826a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594755669985:android:28b3377e3879d4a1048ca0",
+        "android_client_info": {
+          "package_name": "com.example.cartravels"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594755669985-f42h7e8nn1t42egcf446r7pn2kitockh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVlpCtPnKzFHssFmpdw7q64XZdzzGvOLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "594755669985-f42h7e8nn1t42egcf446r7pn2kitockh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

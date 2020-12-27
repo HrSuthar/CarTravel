@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_View"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/textViewEventVehicleNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/ind_card_padding"
+            android:text="Vehicle Number"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/individualcard_size" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/ind_card_padding"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/individualcard_size" />
+
+        <TextView
+            android:id="@+id/textViewEventFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEventVehicleNo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/ind_card_padding"
+            android:text="From :"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/individualcard_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewEventTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEventFrom"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/ind_card_padding"
+            android:text="To :"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/individualcard_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Vehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEventTo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/ind_card_padding"
+            android:text="Vehicle"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/individualcard_size" />
+
+        <TextView
+            android:id="@+id/Seat_aval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEventTo"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/ind_card_padding"
+            android:text="Seat Available"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/individualcard_size" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

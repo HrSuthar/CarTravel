@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/search_padding"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Dept_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/search_marginTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_border"
+        android:padding="@dimen/search_editView_padding"
+        android:hint="Departure Place"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Arr_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_marginTop"
+        app:layout_constraintTop_toBottomOf="@+id/Dept_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_border"
+        android:padding="@dimen/search_editView_padding"
+        android:hint="Arrival Place"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Date_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Arr_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginTop="@dimen/search_marginTop"
+        android:padding="@dimen/search_editView_padding"
+        android:hint="Date"
+        android:inputType="date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
